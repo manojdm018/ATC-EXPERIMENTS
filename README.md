@@ -21,6 +21,11 @@ To compile and run these programs, you need:
 - **Bison** or **Yacc** (Parser Generator)
 - **GCC** (C Compiler)
 
+## 💡 Dual Implementation
+Each experiment (except Exp 09, which is pure C) now includes two ways to run:
+1. **Tool-based Version**: Uses Flex and Bison (standard for compiler labs).
+2. **Pure C Version**: A manual implementation (`main.c`) that can be compiled with just `gcc`. No special tools required!
+
 ### Typical Compilation Flow
 For Lex:
 ```bash
