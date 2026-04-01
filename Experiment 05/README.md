@@ -10,7 +10,7 @@ Write a Yacc program to evaluate simple arithmetic expressions using a Lex token
 ## How to Run
 ```bash
 bison -d calc.y
-flex calc.l
+flex lexer.l
 gcc lex.yy.c calc.tab.c -o calc
 ./calc
 ```
