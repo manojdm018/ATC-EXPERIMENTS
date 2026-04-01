@@ -8,10 +8,15 @@ Write a Yacc program to generate target assembly code (simple MOVE, ADD, SUB ins
 
 ## How to Run
 ```bash
+# Option 1: Yacc Version
 bison -d code_gen.y
 flex lexer.l
 gcc lex.yy.c code_gen.tab.c -o codegen
 ./codegen
+
+# Option 2: Pure C Version
+gcc main.c -o codegen_c
+./codegen_c
 ```
 
 ## Actual Output

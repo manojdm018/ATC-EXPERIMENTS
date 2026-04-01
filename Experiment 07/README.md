@@ -8,10 +8,15 @@ Write a Yacc program to construct an Abstract Syntax Tree (AST) for a given arit
 
 ## How to Run
 ```bash
+# Option 1: Yacc Version
 bison -d ast.y
 flex lexer.l
 gcc lex.yy.c ast.tab.c -o ast
 ./ast
+
+# Option 2: Pure C Version
+gcc main.c -o ast_c
+./ast_c
 ```
 
 ## Actual Output

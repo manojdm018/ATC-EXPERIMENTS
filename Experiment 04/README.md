@@ -8,9 +8,14 @@ Write a Lex program that validates different patterns using regular expressions 
 
 ## How to Run
 ```bash
+# Option 1: Lex Version
 flex validate_regex.l
 gcc lex.yy.c -o validate
 ./validate
+
+# Option 2: Pure C Version
+gcc main.c -o validate_c
+./validate_c
 ```
 
 ## Actual Output

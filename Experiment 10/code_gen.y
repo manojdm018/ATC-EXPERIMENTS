@@ -51,7 +51,7 @@ E: E '+' E {
 %%
 
 char* new_temp() {
-    char *t = (char*)malloc(10);
+    char *t = (char*)malloc(20);
     sprintf(t, "t%d", temp_count++);
     return t;
 }

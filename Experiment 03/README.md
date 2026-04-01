@@ -8,9 +8,14 @@ Write a Lex program to count the number of lines, words, and characters (like th
 
 ## How to Run
 ```bash
+# Option 1: Lex Version
 flex count_lwc.l
 gcc lex.yy.c -o count
 ./count
+
+# Option 2: Pure C Version
+gcc main.c -o count_c
+./count_c
 ```
 
 ## Actual Output

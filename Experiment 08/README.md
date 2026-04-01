@@ -8,10 +8,15 @@ Implement a parser for control statements (if-else, while) using Lex and Yacc.
 
 ## How to Run
 ```bash
+# Option 1: Lex+Yacc Version
 bison -d control_flow.y
 flex lexer.l
 gcc lex.yy.c control_flow.tab.c -o parser
 ./parser
+
+# Option 2: Pure C Version
+gcc main.c -o parser_c
+./parser_c
 ```
 
 ## Actual Output

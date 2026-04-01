@@ -8,10 +8,15 @@ Write a Yacc program to check if a given context-free grammar is ambiguous (e.g.
 
 ## How to Run
 ```bash
+# Option 1: Yacc Version
 bison -d ambiguity.y
 flex lexer.l
 gcc lex.yy.c ambiguity.tab.c -o ambiguity
 ./ambiguity
+
+# Option 2: Pure C Version
+gcc main.c -o ambiguity_c
+./ambiguity_c
 ```
 
 ## Actual Output
